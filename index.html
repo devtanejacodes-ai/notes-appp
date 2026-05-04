@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Smart Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 Smart Notes</h1>
+
+      <div class="input-group">
+        <input id="noteInput" placeholder="Write something..." />
+        <button onclick="addNote()">Add</button>
+      </div>
+
+      <input
+        id="search"
+        placeholder="Search notes..."
+        oninput="renderNotes()"
+      />
+
+      <div id="notesList" class="notes-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
