@@ -40,7 +40,7 @@ function renderNotes() {
 
     div.innerHTML = `
       <span>${note}</span>
-      <button class="delete-btn" onclick="deleteNote(${index})">✕</button>
+      <button class="delete-btn" onclick="deleteNote(${index})">X</button>
     `;
 
     container.appendChild(div);
